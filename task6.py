@@ -8,4 +8,10 @@
 # 25 15
 # Вывод:
 # 5 3
+m, n = int(input()), int(input())
+mx = 1
+for i in range(2, min(m, n) + 1):
+    if(m % i == 0 and n % i == 0):
+        mx = max(mx, i)
+print(m // mx, n // mx)
 

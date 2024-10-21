@@ -6,17 +6,20 @@
 # 378
 # Вывод:
 # 2*3*3*3*7
-def F(n):
-    res = ''
-    for i in range(2, int(n ** 0.5) + 1):
-        while (n % i == 0):
-            res += str(i)
-            res += '*'
-            n /= i
-    if(n != 1):
-        res += str(int(n))
-        res += '*'
-    return res[:-1]
-n = int(input())
-print(F(n))
+def F2(n):
+    if(F2 == 1):
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if(n % i == 0):
+            return False
+    return True
+def F1(n):
+    if(F2(n)):
+        print(n, end='')
+        return ''
+    for i in range(2, int(n**0.5)+1):
+        if(n % i == 0):
+            print(i, '*', sep='', end='')
+            F1(n // i)
+            return ''
 

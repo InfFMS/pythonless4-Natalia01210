@@ -5,7 +5,6 @@
 # Пример:
 # 2013
 # MMXIII
-from ssl import SSLSocket
 
 
 

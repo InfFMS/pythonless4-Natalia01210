@@ -10,5 +10,6 @@
 # ********
 # *********
 # **********
-for i in range(1, int(input()) + 1):
-    print("*" * i)
+def F(N):
+    for i in range(1, N + 1):
+        print("*" * i)
